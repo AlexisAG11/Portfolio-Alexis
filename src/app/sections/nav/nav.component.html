@@ -1,0 +1,29 @@
+<header class="relative z-10 w-full font-poppins h-[8rem]">
+    <nav class="flex justify-around items-center max-container h-full w-full">
+        <div class="text-2xl md:text-[2rem]">Alexis Guerin</div>
+        <ul class="gap-[2rem] hidden lg:flex">
+            <li *ngFor="let item of navLink">
+                <a [routerLink]="[]" fragment="{{item.href}}" class=" text-2xl decoration-white text-colo transition-all hover:text-[#808080] hover:underline hover:underline-offset-[1rem] hover:decoration-[rgb(185,185,185)]">
+                    {{item.label}}
+                </a>
+            </li>
+        </ul>
+        <div class="block lg:hidden ">
+            <button *ngIf="!displayMenu" class="" (click)="displayMenu=true">
+                <img src="../../assets/icons/hamburger.svg" alt="Hamburger" width="30" height="25">
+            </button>
+            <div class="relative">
+                <button *ngIf="displayMenu" class="" (click)="displayMenu=false">
+                    <img src="../../assets/icons/cross-svgrepo-com.svg" alt="Hamburger" width="25" height="25">
+                </button>
+                <ul class="absolute z-20 right-0 top-[2rem] flex flex-col items-center gap-4 transition-opacity" [ngClass]="displayMenu ? 'visible opacity-100':'invisible opacity-30'">
+                    <li *ngFor="let item of navLink">
+                        <a [routerLink]="[]" fragment="{{item.href}}" class=" leading-normal text-2xl w-full">
+                            {{item.label}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
