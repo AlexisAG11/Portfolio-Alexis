@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-alexis';
+  navLink = [
+    {href: 'moi', label: 'Moi'},
+    {href: 'experience', label: 'Experience'},
+    {href: 'projets', label: 'Projets'},
+    {href: 'contact', label: 'Contact'}
+  ];
 }

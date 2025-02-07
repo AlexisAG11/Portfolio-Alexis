@@ -1,4 +1,19 @@
 <main class="relative">
   <app-nav></app-nav>
   <app-hero></app-hero>
+  <app-about-me id="moi"></app-about-me>
+  <app-experience id="experience"></app-experience>
+  <app-project id="projets"></app-project>
+  <app-contact id="contact"></app-contact>
+  <footer class="">
+    <nav class="flex justify-center items-center max-container mb-20">
+      <ul class="flex items-center flex-col sm:flex-row gap-[0.5rem] sm:gap-[2rem]">
+          <li *ngFor="let item of navLink">
+              <a [routerLink]="[]" fragment="{{item.href}}" class="text-base sm:text-2xl decoration-white text-colo transition-all hover:text-[#808080] hover:underline hover:underline-offset-[1rem] hover:decoration-[rgb(185,185,185)]">
+                  {{item.label}}
+              </a>
+          </li>
+      </ul>
+  </nav>
+  </footer>
 </main>

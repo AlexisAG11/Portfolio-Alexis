@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class NavComponent {
 
   navLink = [
-    {href: 'me', label: 'Me'},
+    {href: 'moi', label: 'Moi'},
     {href: 'experience', label: 'Experience'},
-    {href: 'projects', label: 'Projects'},
+    {href: 'projets', label: 'Projets'},
     {href: 'contact', label: 'Contact'}
   ];
 
