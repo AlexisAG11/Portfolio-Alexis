@@ -1,0 +1,8 @@
+<div class="fixed z-[30] left-0 top-0 bottom-0 right-0" [ngClass]="  isOverlayVideo? 'visible' : 'invisible' ">
+    <div class="w-full h-full relative flex items-center justify-center">
+        <div class="bg-black/40 fixed left-0 top-0 bottom-0 right-0 z-[10]" (click)="onOverlayVideo()"></div>
+        <div class="w-[72.5rem] relative bg-primary-black z-[20] flex min-h-[31.25rem] border border-[#4f5264] transition-all" [ngClass]="isOverlayVideo? 'translate-y-0 opacity-1' : 'translate-y-[-6.25rem] opacity-0' ">
+            LOL
+        </div>
+    </div>
+</div>

@@ -6,26 +6,58 @@
         </div>
     </div>
     <div class="mt-[2rem] flex flex-col items-center gap-8 sm:flex-row sm:justify-around">
-        <div class="border border-[#a3a3a3] rounded-[2rem] py-[1.2rem] px-[2rem] sm:py-[1.5rem] sm:px-[3rem] flex flex-col justify-center bg-[#fafafa]">
-            <div class="flex flex-col items-center">
-                <img src="../../../assets/images/project-1.png" alt="" class="w-full h-full object-cover rounded-[2rem] max-h-[25rem] max-w-[25rem]">
-                <h2 class="my-[1rem] text-xl font-bold lg:text-[1.75rem]">Project One</h2>
+        <div class="border border-[#a3a3a3] rounded-[2rem] py-[1.2rem] px-[2rem] sm:py-[1.5rem] sm:px-[3rem] flex flex-col justify-center items-center bg-[#fafafa] w-[20rem] h-[28rem] lg:w-[24rem] lg:h-[32rem]  xl:w-[32rem] xl:h-[39rem]">
+            <div class="flex flex-col items-center w-full h-full max-w-[25rem]">
+                <div class="w-full h-full relative">
+                    <img src="../../../assets/images/Screenshot 2025-02-08 002540.png" alt="" class="h-full w-full object-cover border border-[#a3a3a3] rounded-[2rem] opacity-70">
+                    <button class="absolute inset-0 m-auto w-[25%] h-[25%] group" (click)="onOverlayVideo(0)">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full">
+                            <path stroke-linecap="round" class=" transition group-hover:fill-black" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" class="transition group-hover:stroke-white" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                          </svg>
+                    </button>
+                </div>
+                <a href="https://trustyourfriend-front.onrender.com/" target="_blank" class="hover:text-[#808080] transition-all hover:underline hover:decoration-[rgb(185,185,185)] decoration-white">
+                    <h2 class="mt-[1rem] mb-[0.3rem] text-xl font-bold lg:text-[1.75rem]">Trustyourfriend</h2>
+                </a>
+                <p class="mb-[1rem] text-center text-[#555555]">Recommandation de bonnes adresses entre amis</p>
                 <div class="w-full flex gap-4 justify-between">
-                    <button class="flex-1 bg-[#fafafa] p-4 rounded-[2rem] text-[0.85rem] font-semibold font-[arial] border-[0.1rem] border-[#555555] hover:bg-[#1d1d1d] hover:text-white transition-all">Github</button>
-                    <button class="flex-1 bg-[#fafafa] p-4 rounded-[2rem] text-[0.85rem]] font-semibold font-[arial] border-[0.1rem] border-[#555555] hover:bg-[#1d1d1d] hover:text-white transition-all">Demo</button>
+                    <a href="https://github.com/AlexisAG11/TrustYourFriend-Front" target="_blank" class="flex-1 bg-[#fafafa] p-4 rounded-[2rem] text-[0.85rem] font-semibold font-[arial] border-[0.1rem] border-[#555555] hover:bg-[#1d1d1d] hover:text-white transition-all text-center">Github</a>
+                    <button class="flex-1 bg-[#fafafa] p-4 rounded-[2rem] text-[0.85rem] font-semibold font-[arial] border-[0.1rem] border-[#555555] hover:bg-[#1d1d1d] hover:text-white transition-all text-center" (click)="onOverlayVideo(1)">Demo</button>
                 </div>
             </div>
         </div>
-        <div class="border border-[#a3a3a3] rounded-[2rem] py-[1.2rem] px-[2rem] sm:py-[1.5rem] sm:px-[3rem] flex flex-col justify-center bg-[#fafafa]">
-            <div class="flex flex-col items-center">
-                <img src="../../../assets/images/project-1.png" alt="" class="w-full h-full object-cover rounded-[2rem] max-h-[25rem] max-w-[25rem]">
-                <h2 class="my-[1rem] text-xl font-bold lg:text-[1.75rem]">Project One</h2>
+        <div class="border border-[#a3a3a3] rounded-[2rem] py-[1.2rem] px-[2rem] sm:py-[1.5rem] sm:px-[3rem] flex flex-col justify-center bg-[#fafafa] w-[20rem] h-[28rem] lg:w-[24rem] lg:h-[32rem]  xl:w-[32rem] xl:h-[39rem] items-center">
+            <div class="flex flex-col items-center w-full h-full max-w-[25rem]">
+                <div class="h-full w-full relative">
+                    <img src="../../../assets/images/Screenshot-kc.png" alt="" class="w-full h-full object-cover border border-[#a3a3a3] rounded-[2rem] opacity-70">
+                    <button class="absolute inset-0 m-auto w-[25%] h-[25%] group" (click)="onOverlayVideo(1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full">
+                          <path stroke-linecap="round" class=" transition group-hover:fill-black" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" class="transition group-hover:stroke-white" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                        </svg>
+                  </button>
+                </div>
+                <a href="https://karminecorp-clone-by-alexis.netlify.app/" target="_blank" class="hover:text-[#808080] transition-all hover:underline hover:decoration-[rgb(185,185,185)] decoration-white">
+                    <h2 class="mt-[1rem] mb-[0.3rem] text-xl font-bold lg:text-[1.75rem]">Clone karminecorp.fr</h2>
+                </a>
+                <p class="mb-[1rem] max-w-[25rem] text-center text-[#555555]">Reproduction du site de l'équipe e-sport : karmin Corp</p>
                 <div class="w-full flex gap-4 justify-between">
-                    <button class="flex-1 bg-[#fafafa] p-4 rounded-[2rem] text-[0.85rem] font-semibold font-[arial] border-[0.1rem] border-[#555555] hover:bg-[#1d1d1d] hover:text-white transition-all">Github</button>
-                    <button class="flex-1 bg-[#fafafa] p-4 rounded-[2rem] text-[0.85rem] font-semibold font-[arial] border-[0.1rem] border-[#555555] hover:bg-[#1d1d1d] hover:text-white transition-all">Demo</button>
+                    <a href="https://github.com/AlexisAG11/Kcorp-clone" target="_blank" class="flex-1 bg-[#fafafa] p-4 rounded-[2rem] text-[0.85rem] font-semibold font-[arial] border-[0.1rem] border-[#555555] hover:bg-[#1d1d1d] hover:text-white transition-all text-center">Github</a>
+                    <button class="flex-1 bg-[#fafafa] p-4 rounded-[2rem] text-[0.85rem] font-semibold font-[arial] border-[0.1rem] border-[#555555] hover:bg-[#1d1d1d] hover:text-white transition-all text-center" (click)="onOverlayVideo(1)">Demo</button>
                 </div>
             </div>
         </div>
-        
     </div>
 </div>
+<div class="fixed z-[30] left-0 top-0 bottom-0 right-0" [ngClass]=" isOverlayVideo? 'visible' : 'invisible' ">
+    <div class="w-full h-full relative flex items-center justify-center">
+        <div class="bg-black/40 fixed left-0 top-0 bottom-0 right-0 z-[10]" (click)="isOverlayVideo=false"></div>
+        <div class="flex justify-center items-center w-[80rem]">
+                <video class="relative bg-primary-black z-[20] bg-white flex border-[0.2rem] border-black transition-all w-full h-full" [ngClass]="isOverlayVideo? 'translate-y-0 opacity-1' : 'translate-y-[-6.25rem] opacity-0' " [src]="actualVideo" controls type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+        </div>
+    </div>
+</div>
+
